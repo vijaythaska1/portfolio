@@ -1,9 +1,58 @@
-// @flow strict
-import Link from 'next/link';
-import { FaArrowRight } from 'react-icons/fa';
-import BlogCard from './blog-card';
+import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
-function Blog({ blogs }) {
+const NpmPackageGrid = ({ packages = [] }) => {
+  if (packages.length === 0) {
+    return (
+      <div className="text-center p-6 bg-gray-100 dark:bg-gray-800 rounded-lg">
+        <p className="text-gray-600 dark:text-gray-300">No packages to display.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+      {packages.map((pkg, index) => (
+        <a
+          key={index}
+          href={pkg.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{pkg.name}</h3>
+            <ExternalLink className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+          </div>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">{pkg.description}</p>
+          <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
+            <span className="mr-2">v{pkg.version}</span>
+            <span>{pkg.downloads} downloads</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  );
+};
+
+// Usage example:
+const Blog = () => {
+  const npmPackages = [
+    {
+      name: "flexible-form-validation",
+      url: "https://www.npmjs.com/package/flexible-form-validation?activeTab=readme",
+      description: "A flexible form validation library for React applications.",
+      version: "1.2.3",
+      downloads: "5k"
+    },
+    {
+      name: "file-uploader-express",
+      url: "https://www.npmjs.com/package/file-uploader-express",
+      description: "Easy-to-use file uploader middleware for Express.js.",
+      version: "2.0.1",
+      downloads: "10k"
+    },
+  ];
 
   return (
     <div id='blogs' className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
@@ -19,30 +68,13 @@ function Blog({ blogs }) {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Blogs
+            Npm Package
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 xl:gap-10">
-        {
-          blogs.slice(0, 6).map((blog, i) => (
-            blog?.cover_image &&
-            <BlogCard blog={blog} key={i} />
-          ))
-        }
-      </div>
-
-      <div className="flex justify-center  mt-5 lg:mt-12">
-        <Link
-          className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
-          role="button"
-          href="/blog"
-        >
-          <span>View More</span>
-          <FaArrowRight size={16} />
-        </Link>
+      <div className="container mx-auto px-4">
+        <NpmPackageGrid packages={npmPackages} />
       </div>
     </div>
   );
