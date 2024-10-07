@@ -7,14 +7,21 @@ export const educations = [
   },
   {
     id: 2,
+    title: "Bachelor of Commerce",
+    duration: "2019 - 2022",
+    institution: "Maa Shakumbhari University" ,
+  },
+  
+  {
+    id: 3,
     title: "Higher Secondary Certificate",
-    duration: "2021 - 2022",
+    duration: "2017 - 2018",
     institution: "Kisan Sewak Inter College",
   },
   {
-    id: 3,
+    id: 4,
     title: "Secondary School Certificate",
-    duration: "2019 - 2020",
+    duration: "2015 - 2016",
     institution: "Kisan Sewak Inter College",
   }
 ]
