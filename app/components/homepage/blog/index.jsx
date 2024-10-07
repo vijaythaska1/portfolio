@@ -27,7 +27,6 @@ const NpmPackageGrid = ({ packages = [] }) => {
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">{pkg.description}</p>
           <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
             <span className="mr-2">v{pkg.version}</span>
-            <span>{pkg.downloads} downloads</span>
           </div>
         </a>
       ))}
@@ -43,14 +42,12 @@ const Blog = () => {
       url: "https://www.npmjs.com/package/flexible-form-validation?activeTab=readme",
       description: "A flexible form validation library for React applications.",
       version: "1.2.3",
-      downloads: "5k"
     },
     {
       name: "file-uploader-express",
       url: "https://www.npmjs.com/package/file-uploader-express",
       description: "Easy-to-use file uploader middleware for Express.js.",
       version: "2.0.1",
-      downloads: "10k"
     },
   ];
 

@@ -13,9 +13,8 @@
 
 # Demo :movie_camera:
 
-![](./public/image/screen.png)
 
-## View live preview [here](https://abusaid.netlify.app/).
+## View live preview [here](https://portfolio-theta-three-49.vercel.app/).
 
 ---
 
