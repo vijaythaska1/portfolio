@@ -25,7 +25,7 @@ A modern, fully customizable developer portfolio template built with Next.js and
 - **Skills** - Highlight your technical expertise
 - **Projects** - Display your portfolio work
 - **Education** - List your academic achievements
-- **Blog** - Share your thoughts and knowledge
+- **NpmPackege** - Share your  and knowledge
 - **Contact** - Let visitors reach out to you
 
 ## 🚀 Quick Start
