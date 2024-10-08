@@ -43,29 +43,29 @@ function ContactWithCaptcha() {
     }
     setIsSubmitting(true);
     const emailData = {
-      to_name: "Admin", 
+      to_name: "Admin",
       from_name: input.name,
       from_email: input.email,
       message: input.message,
     };
-   const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
-    const options =  process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY 
+    const options = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
     try {
       await emailjs.send(
-        serviceID,     
-        templateID,    
+        serviceID,
+        templateID,
         emailData,
-        options  
+        options
       );
-        toast.success('Message sent successfully!');
-        setInput({
-          name: '',
-          email: '',
-          message: '',
-        });
-        setCaptcha(null);
-    
+      toast.success('Message sent successfully!');
+      setInput({
+        name: '',
+        email: '',
+        message: '',
+      });
+      setCaptcha(null);
+
     } catch (error) {
       console.error('Send error:', error);
       toast.error(error?.text || 'Failed to send message. Please try again.');
@@ -140,7 +140,7 @@ function ContactWithCaptcha() {
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
             onChange={setCaptcha}
           />
-          
+
           <div className="flex flex-col items-center gap-2">
             {error.required && (
               <p className="text-sm text-red-400">

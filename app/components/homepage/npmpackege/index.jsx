@@ -10,7 +10,7 @@ const NpmPackageGrid = ({ packages = [] }) => {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+    <div id="npmpackege" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
       {packages.map((pkg, index) => (
         <a
           key={index}
