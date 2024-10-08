@@ -39,8 +39,8 @@ function Experience() {
           <div>
             <div className="flex flex-col gap-6">
               {
-                experiences.map(experience => (
-                  <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
+                experiences.map((experience,i) => (
+                  <GlowCard key={i}>
                     <div className="p-3 relative">
                       <Image
                         src="/blur-23.svg"

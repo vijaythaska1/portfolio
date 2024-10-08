@@ -1,4 +1,3 @@
-import React from 'react';
 import { ExternalLink } from 'lucide-react';
 
 const NpmPackageGrid = ({ packages = [] }) => {
@@ -34,8 +33,7 @@ const NpmPackageGrid = ({ packages = [] }) => {
   );
 };
 
-// Usage example:
-const Blog = () => {
+const Package = () => {
   const npmPackages = [
     {
       name: "flexible-form-validation",
@@ -77,4 +75,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Package;
