@@ -1,6 +1,6 @@
 # Developer Portfolio 🚀
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen)](https://portfolio-theta-three-49.vercel.app/)
+[![Live Demo](/image/screen.png)](https://portfolio-theta-three-49.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue)](https://github.com/vijaythaska1/portfolio.git)
 
 A modern, fully customizable developer portfolio template built with Next.js and Tailwind CSS. Perfect for developers and freelancers looking to showcase their skills and projects professionally.
@@ -79,10 +79,19 @@ yarn dev
 Edit `utils/data/personalData.js`:
 ```javascript
 export const personalData = {
-  name: "Your Name",
-  designation: "Your Title",
-  email: "your.email@example.com",
-  // ... other personal details
+name: "Vijay Sharna",
+  profile: '/profile.jpeg',
+  designation: "Software Developer",
+  description: "My name is Vijay Sharma. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+  email: 'Vijaythaska2@gmail.com',
+  phone: '+91-7300760917',
+  address: '1031, Phase 3B2, Phase 3B-2, Sector 60, Sahibzada Ajit Singh Nagar, Punjab 160059',
+  github: 'https://github.com/vijaythaska1',
+  facebook: 'https://www.facebook.com/share/ReSyAzBG9iGEJ2S1/',
+  linkedIn: 'https://www.linkedin.com/in/vijay-sharma1',
+  twitter: 'https://twitter.com/VIJAYSH96442927',
+  stackOverflow: 'https://stackoverflow.com/users/27639378/vijay-sharma',
+  leetcode: "https://leetcode.com/u/vijayshrama/",
 };
 ```
 
@@ -130,4 +139,4 @@ If you have any questions or need help, please open an issue in the GitHub repos
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Vijay Sharma
