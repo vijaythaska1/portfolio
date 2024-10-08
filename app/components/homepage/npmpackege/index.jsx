@@ -15,7 +15,7 @@ const NpmPackageGrid = ({ packages = [] }) => {
         <a
           key={index}
           href={pkg.url}
-          target="_blank"
+          target="_blank" 
           rel="noopener noreferrer"
           className="block p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
         >
