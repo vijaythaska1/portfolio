@@ -1,11 +1,11 @@
 # Developer Portfolio 🚀
 
-[![Live Demo](/image/screen.png)](https://portfolio-theta-three-49.vercel.app/)
+[![Live Demo](public/image/screen.png)](https://portfolio-theta-three-49.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue)](https://github.com/vijaythaska1/portfolio.git)
 
 A modern, fully customizable developer portfolio template built with Next.js and Tailwind CSS. Perfect for developers and freelancers looking to showcase their skills and projects professionally.
 
-![Portfolio Preview](https://via.placeholder.com/800x400)
+![Portfolio Preview](public/image/screen.png)
 
 ## ✨ Features
 
