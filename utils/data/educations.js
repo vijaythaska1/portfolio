@@ -9,7 +9,7 @@ export const educations = [
     id: 2,
     title: "Bachelor of Commerce",
     duration: "2019 - 2022",
-    institution: "Maa Shakumbhari University" ,
+    institution: "Chaudhary Charan Singh University" ,
   },
   
   {
